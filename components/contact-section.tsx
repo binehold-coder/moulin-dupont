@@ -88,6 +88,9 @@ export function ContactSection() {
           <div className="lg:col-span-3">
             <form
               onSubmit={handleSubmit}
+              suppressHydrationWarning
+              autoComplete="off"
+              data-lpignore="true"
               className="rounded-lg border border-border bg-card p-6 shadow-sm md:p-8"
             >
               <div className="grid gap-5 sm:grid-cols-2">
@@ -100,6 +103,9 @@ export function ContactSection() {
                     name="nom"
                     type="text"
                     required
+                    suppressHydrationWarning
+                    autoComplete="off"
+                    data-lpignore="true"
                     placeholder="Jean Dupont"
                     className="rounded-md border border-input bg-background px-3.5 py-2.5 text-sm text-foreground outline-none transition-colors placeholder:text-muted-foreground/70 focus:border-ring focus:ring-2 focus:ring-ring/40"
                   />
@@ -113,6 +119,9 @@ export function ContactSection() {
                     name="email"
                     type="email"
                     required
+                    suppressHydrationWarning
+                    autoComplete="off"
+                    data-lpignore="true"
                     placeholder="jean@exemple.fr"
                     className="rounded-md border border-input bg-background px-3.5 py-2.5 text-sm text-foreground outline-none transition-colors placeholder:text-muted-foreground/70 focus:border-ring focus:ring-2 focus:ring-ring/40"
                   />
@@ -127,6 +136,9 @@ export function ContactSection() {
                   id="sujet"
                   name="sujet"
                   type="text"
+                  suppressHydrationWarning
+                  autoComplete="off"
+                  data-lpignore="true"
                   placeholder="Demande de renseignements"
                   className="rounded-md border border-input bg-background px-3.5 py-2.5 text-sm text-foreground outline-none transition-colors placeholder:text-muted-foreground/70 focus:border-ring focus:ring-2 focus:ring-ring/40"
                 />
@@ -141,6 +153,9 @@ export function ContactSection() {
                   name="message"
                   required
                   rows={5}
+                  suppressHydrationWarning
+                  autoComplete="off"
+                  data-lpignore="true"
                   placeholder="Bonjour, je souhaiterais..."
                   className="resize-none rounded-md border border-input bg-background px-3.5 py-2.5 text-sm text-foreground outline-none transition-colors placeholder:text-muted-foreground/70 focus:border-ring focus:ring-2 focus:ring-ring/40"
                 />

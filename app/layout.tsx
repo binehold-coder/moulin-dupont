@@ -18,7 +18,6 @@ export const metadata: Metadata = {
   title: 'Moulin Dupont — L\'excellence meunière depuis 1704',
   description:
     'Moulin Dupont, minoterie familiale au Bourget-du-Lac depuis 1704. Farines d\'exception moulues dans le respect de la tradition artisanale.',
-  generator: 'v0.app',
   icons: {
     icon: [
       {
